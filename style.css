@@ -1,48 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turbo Cats: The Board Game - Kickstarter Pre-Launch</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f8f8f8;
+  color: #222;
+}
 
-    <header class="hero">
-        <div class="container">
-            <h1 class="game-title">Racing Cats</h1>
-            <h2>The Fiercest Feline Race is Coming to Kickstarter!</h2>
-            <p class="tagline">Sign up now for a **FREE** exclusive in-game card and be the first to know when we launch!</p>
-            
-            <div class="form-container">
-                <form id="emailForm">
-                    <input type="email" id="email" placeholder="Enter your email address" required>
-                    <button type="submit" class="cta-button">Notify Me on Launch!</button>
-                    <p class="privacy-note">We respect your privacy. Unsubscribe anytime.</p>
-                </form>
-                <p id="thankYouMessage" class="hidden">Thanks for your interest! We'll be in touch soon, meow!</p>
-            </div>
-            
-            <p class="launch-note">Anticipated Launch: Q3 2026</p>
-        </div>
-    </header>
+.hero {
+  background: #ffcc00;
+  padding: 80px 20px;
+  text-align: center;
+}
 
-    <section class="features">
-        <div class="container">
-            <h3>Why You'll Love Turbo Cats:</h3>
-            <ul>
-                <li>⚡ Fast-paced, tactical card play.</li>
-                <li>🐾 Adorable, high-quality cat miniatures and art.</li>
-                <li>🎲 Easy to learn, difficult to master racing mechanics.</li>
-            </ul>
-        </div>
-    </section>
+.game-title {
+  font-family: 'Bungee', cursive;
+  font-size: 4rem;
+}
 
-    <footer>
-        <p>&copy; 2025 Turbo Cats Game. Follow us on Social Media!</p>
-        </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+.hidden {
+  display: none;
+}
