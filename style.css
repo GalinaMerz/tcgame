@@ -1,21 +1,181 @@
+/* -----------------------------
+   Global styles
+------------------------------ */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: #f8f8f8;
-  color: #222;
+  background: #f6f7fb;
+  color: #1f2933;
+  line-height: 1.6;
 }
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* -----------------------------
+   Hero section
+------------------------------ */
+
 .hero {
-  background: #ffcc00;
-  padding: 80px 20px;
+  background: linear-gradient(135deg, #ffcc00, #ff8c42);
+  color: #1f2933;
+  padding: 90px 0 70px;
   text-align: center;
 }
 
 .game-title {
   font-family: 'Bungee', cursive;
-  font-size: 4rem;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  margin: 0 0 10px;
+  letter-spacing: 2px;
 }
 
-.hidden {
-  display: none;
+.hero h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  max-width: 650px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+}
+
+/* -----------------------------
+   Email form
+------------------------------ */
+
+.form-container {
+  background: #ffffff;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+#emailForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#email {
+  padding: 14px 16px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #e5e7eb;
+}
+
+#email:focus {
+  outline: none;
+  border-color: #ff8c42;
+}
+
+.cta-button {
+  background: #ff4d4d;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 77, 77, 0.4);
+}
+
+.privacy-note {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-top: 5px;
+}
+
+#thankYouMessage {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #16a34a;
+  text-align: center;
+}
+
+/* -----------------------------
+   Launch note
+------------------------------ */
+
+.launch-note {
+  margin-top: 25px;
+  font-weight: 700;
+}
+
+/* -----------------------------
+   Features section
+------------------------------ */
+
+.features {
+  background: #ffffff;
+  padding: 70px 0;
+}
+
+.features h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.features ul {
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.features li {
+  background: #f9fafb;
+  border-radius: 14px;
+  padding: 18px 22px;
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* -----------------------------
+   Footer
+------------------------------ */
+
+footer {
+  background: #1f2933;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+}
+
+/* -----------------------------
+   Responsive tweaks
+------------------------------ */
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 24px;
+  }
+
+  .hero h2 {
+    font-size: 1.3rem;
+  }
 }
